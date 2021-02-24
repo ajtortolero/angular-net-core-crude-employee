@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\API"
+    "\\API",
+    "\\DB"
   ],
-  "SelectedNode": "\\API\\NETCoreCrude.sln",
+  "SelectedNode": "\\DB",
   "PreviewInSolutionExplorer": false
 }
