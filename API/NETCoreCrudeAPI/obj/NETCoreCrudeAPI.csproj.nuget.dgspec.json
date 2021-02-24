@@ -1,0 +1,337 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrudeAPI\\NETCoreCrudeAPI.csproj": {}
+  },
+  "projects": {
+    "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.Base\\NETCoreCrude.Base.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.Base\\NETCoreCrude.Base.csproj",
+        "projectName": "NETCoreCrude.Base",
+        "projectPath": "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.Base\\NETCoreCrude.Base.csproj",
+        "packagesPath": "C:\\Users\\ajtortolero\\.nuget\\packages\\",
+        "outputPath": "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.Base\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ajtortolero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://fuelcontrolsystem.pkgs.visualstudio.com/_packaging/FCSArtifacts/nuget/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.BLL\\NETCoreCrude.BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.BLL\\NETCoreCrude.BLL.csproj",
+        "projectName": "NETCoreCrude.BLL",
+        "projectPath": "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.BLL\\NETCoreCrude.BLL.csproj",
+        "packagesPath": "C:\\Users\\ajtortolero\\.nuget\\packages\\",
+        "outputPath": "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ajtortolero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://fuelcontrolsystem.pkgs.visualstudio.com/_packaging/FCSArtifacts/nuget/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {
+              "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.DAL\\NETCoreCrude.DAL.csproj": {
+                "projectPath": "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.DAL\\NETCoreCrude.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "DataTables.AspNet.Core": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "System.ServiceModel.Duplex": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "System.ServiceModel.NetTcp": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "System.ServiceModel.Security": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.DAL\\NETCoreCrude.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.DAL\\NETCoreCrude.DAL.csproj",
+        "projectName": "NETCoreCrude.DAL",
+        "projectPath": "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.DAL\\NETCoreCrude.DAL.csproj",
+        "packagesPath": "C:\\Users\\ajtortolero\\.nuget\\packages\\",
+        "outputPath": "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ajtortolero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://fuelcontrolsystem.pkgs.visualstudio.com/_packaging/FCSArtifacts/nuget/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {
+              "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.Base\\NETCoreCrude.Base.csproj": {
+                "projectPath": "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.Base\\NETCoreCrude.Base.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrudeAPI\\NETCoreCrudeAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrudeAPI\\NETCoreCrudeAPI.csproj",
+        "projectName": "NETCoreCrudeAPI",
+        "projectPath": "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrudeAPI\\NETCoreCrudeAPI.csproj",
+        "packagesPath": "C:\\Users\\ajtortolero\\.nuget\\packages\\",
+        "outputPath": "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrudeAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ajtortolero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://fuelcontrolsystem.pkgs.visualstudio.com/_packaging/FCSArtifacts/nuget/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {
+              "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.Base\\NETCoreCrude.Base.csproj": {
+                "projectPath": "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.Base\\NETCoreCrude.Base.csproj"
+              },
+              "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.BLL\\NETCoreCrude.BLL.csproj": {
+                "projectPath": "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.BLL\\NETCoreCrude.BLL.csproj"
+              },
+              "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.DAL\\NETCoreCrude.DAL.csproj": {
+                "projectPath": "D:\\Repositories Developer\\GitHub\\Backend\\angular-net-core-crude-employee\\API\\NETCoreCrude.DAL\\NETCoreCrude.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

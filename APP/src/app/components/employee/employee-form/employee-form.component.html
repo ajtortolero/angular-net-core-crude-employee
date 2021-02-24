@@ -1,0 +1,64 @@
+<h6 class="d-flex justify-content-between align-items-center mb-3">
+	<span class="text-muted">Empleados Creación / Edición</span>
+</h6>
+<hr>
+<form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off" accept-charset="UTF-8" employee-form-validator>
+	<input type="hidden" name="EmployeeID" #EmployeeID="ngModel" [(ngModel)]="_EmployeeService._EmployeeData.EmployeeID">
+	<div class="form-group">
+		<label for="DocumentTypeID">Tipo de Documento</label>
+		<select name="DocumentTypeID" #DocumentTypeID="ngModel" [(ngModel)]="_EmployeeService._EmployeeData.DocumentTypeID" [customValueMin]="1" [ngClass]="{ 'is-invalid': _FormSubmitted && DocumentTypeID.invalid }" class="custom-select d-block w-100">
+			<option value="0" selected>SELECCIONE</option>
+			<option *ngFor="let iteDocumentType of _DocumentTypeService._DocumentTypeList" [ngValue]="iteDocumentType.documentTypeID">{{ iteDocumentType.name }}</option>
+		</select>
+		<div *ngIf="_FormSubmitted && DocumentTypeID.invalid" class="invalid-feedback">
+			<div *ngIf="DocumentTypeID.errors?.customValueMin">El tipo de documento es requerido.</div>
+		</div>
+	</div>    
+	<div class="form-group">
+		<label for="DocumentNumber">Documento</label>
+		<input type="text" name="DocumentNumber" #DocumentNumber="ngModel" [(ngModel)]="_EmployeeService._EmployeeData.DocumentNumber" required minlength="6" [ngClass]="{ 'is-invalid': _FormSubmitted && DocumentNumber.invalid }" class="form-control">
+		<div *ngIf="_FormSubmitted && DocumentNumber.invalid" class="invalid-feedback">
+			<div *ngIf="DocumentNumber.errors.required">El documento es requerido.</div>
+			<div *ngIf="DocumentNumber.errors.minlength">El documento debe tener como minimo 6 caracteres.</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="Name">Nombres</label>
+		<input type="text" name="Name" #Name="ngModel" [(ngModel)]="_EmployeeService._EmployeeData.Name" required minlength="2" [ngClass]="{ 'is-invalid': _FormSubmitted && Name.invalid }" class="form-control">
+		<div *ngIf="_FormSubmitted && Name.invalid" class="invalid-feedback">
+			<div *ngIf="Name.errors.required">El nombre es requerido.</div>
+			<div *ngIf="Name.errors.minlength">El nombre debe tener como minimo 2 caracteres.</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="LastName">Apellidos</label>
+		<input type="text" name="LastName" #LastName="ngModel" [(ngModel)]="_EmployeeService._EmployeeData.LastName" required minlength="2" [ngClass]="{ 'is-invalid': _FormSubmitted && LastName.invalid }" class="form-control">
+		<div *ngIf="_FormSubmitted && LastName.invalid" class="invalid-feedback">
+			<div *ngIf="LastName.errors.required">El apellido es requerido.</div>
+			<div *ngIf="LastName.errors.minlength">El apellido debe tener como minimo 2 caracteres.</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="BirthDate">Fecha de Nacimiento</label>
+		<input type="date" name="BirthDate" #BirthDate="ngModel" [(ngModel)]="_EmployeeService._EmployeeData.BirthDate" required [ngClass]="{ 'is-invalid': _FormSubmitted && BirthDate.invalid }" class="form-control">
+		<div *ngIf="_FormSubmitted && BirthDate.invalid" class="invalid-feedback">
+			<div *ngIf="BirthDate.errors.required">La fecha de nacimiento es requerida.</div>
+		</div>
+	</div>    
+	<div class="form-group">
+		<label for="AreaID">Area</label>
+		<select name="AreaID" #AreaID="ngModel" [(ngModel)]="_EmployeeService._EmployeeData.AreaID" [customValueMin]="1" [ngClass]="{ 'is-invalid': _FormSubmitted && AreaID.invalid }" class="custom-select d-block w-100">
+			<option value="0" selected>SELECCIONE</option>
+			<option *ngFor="let iteArea of _AreaService._AreaList" [ngValue]="iteArea.areaID">{{ iteArea.name }}</option>
+		</select>
+		<div *ngIf="_FormSubmitted && AreaID.invalid" class="invalid-feedback">
+			<div *ngIf="AreaID.errors?.customValueMin">El area es requerida.</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<!-- <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-secondary">Enviar</button> -->
+        <button type="submit" class="btn btn-lg btn-block btn-secondary">Enviar</button>
+	</div>
+</form>
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.5)" size="default" type="ball-clip-rotate-multiple">
+</ngx-spinner>
